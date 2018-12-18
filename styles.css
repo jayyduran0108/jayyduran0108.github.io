@@ -1,0 +1,15 @@
+@charset "utf-8";
+    .NormalCharacterStyle1
+{
+    font-family : Seravek;
+    font-size : 36px;
+    color : #000000;
+    color : rgb(0, 0, 0);
+}
+.NormalCharacterStyle
+{
+    font-family : Seravek;
+    font-size : 49px;
+    color : #000000;
+    color : rgb(0, 0, 0);
+}
