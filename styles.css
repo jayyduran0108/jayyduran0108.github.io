@@ -13,3 +13,21 @@
     color : #000000;
     color : rgb(0, 0, 0);
 }
+
+.home{
+    display:flex;
+}
+
+.toprow{
+    flex-direction: row;
+}
+
+.about{
+    width:50%;
+    height: 50%;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+
+    background:"blue";
+}
