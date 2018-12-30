@@ -13,9 +13,7 @@
     color : #000000;
     color : rgb(0, 0, 0);
 }
-body{
-    display: flex;
-}
+
 .home{
     display: flex;
 }
@@ -23,9 +21,10 @@ body{
 #toprow{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-.about{
+.box{
     width:50%;
     height: 50%;
     justify-content: center;
