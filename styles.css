@@ -15,10 +15,11 @@
 }
 
 .home{
-    display:flex;
+    display:"flex";
 }
 
 .toprow{
+    display:"flex";
     flex-direction: row;
 }
 
