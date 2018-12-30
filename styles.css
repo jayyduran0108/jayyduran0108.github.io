@@ -16,11 +16,11 @@
 body{
     display:"flex";
 }
-.home{
+#home{
     display:"flex";
 }
 
-.toprow{
+#toprow{
     display:"flex";
     flex-direction: row;
 }
