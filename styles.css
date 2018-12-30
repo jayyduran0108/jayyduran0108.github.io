@@ -21,6 +21,7 @@ html {
 .home{
     display: flex;
     height: 100%;
+    margin:0;
 }
 
 #toprow{
