@@ -14,14 +14,14 @@
     color : rgb(0, 0, 0);
 }
 body{
-    display:"flex";
+    display: flex;
 }
-#home{
-    display:"flex";
+.home{
+    display: flex;
 }
 
 #toprow{
-    display:"flex";
+    display: flex;
     flex-direction: row;
 }
 
@@ -32,5 +32,5 @@ body{
     flex-direction: column;
     text-align:center;
 
-    background:"blue";
+    background-color:blue;
 }
