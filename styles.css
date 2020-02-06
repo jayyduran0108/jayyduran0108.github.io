@@ -1,4 +1,4 @@
-/*@charset "utf-8";
+@charset "utf-8";
     .NormalCharacterStyle1
 {
     font-family : Seravek;
@@ -16,6 +16,7 @@
 
 html {
     height:100%;
+    background-color: #b3fff0;
 }
 
 .home{
@@ -51,8 +52,8 @@ html {
 i{
     font-size: 50px;
     margin-bottom: 20px;
-}*/
+}
 
 body {
-    background-color: #b3fff0;
+
 }
