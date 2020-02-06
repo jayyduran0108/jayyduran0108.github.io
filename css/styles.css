@@ -1,0 +1,58 @@
+/*@charset "utf-8";
+    .NormalCharacterStyle1
+{
+    font-family : Seravek;
+    font-size : 36px;
+    color : #000000;
+    color : rgb(0, 0, 0);
+}
+.NormalCharacterStyle
+{
+    font-family : Seravek;
+    font-size : 49px;
+    color : #000000;
+    color : rgb(0, 0, 0);
+}
+
+html {
+    height:100%;
+}
+
+.home{
+    display: flex;
+    height: 100%;
+    margin:0;
+    flex-direction: column;
+}
+
+#toprow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+#bottomRow{
+    display:flex;
+    height: 100%;
+}
+
+.box{
+    width:50%;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+    display:flex;
+    font-size:25px;
+
+    background-color: #1E7BB4;
+}
+
+i{
+    font-size: 50px;
+    margin-bottom: 20px;
+}*/
+
+body {
+    background-color: #b3fff0;
+}
