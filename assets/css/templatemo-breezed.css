@@ -325,6 +325,7 @@ header
   height:100%;
   display:table;
   position: fixed;
+  z-index:210;
 }
 
 .header-area .container {
@@ -347,10 +348,6 @@ li a.active::before {
 li a.active::after {
   display: block;
 }
-
-/* li a span.nav-font-body:hover {
-  display:block;
-} */
 
 li a:hover span.nav-font-body {
   font-size: 12px;
@@ -410,183 +407,92 @@ banner
 --------------------------------------------- 
 */
 /* ==== Main CSS === */
-.img-fill{
-  width: 100%;
-  display: block;
-  overflow: hidden;
+}
+.main-home {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:white;
   position: relative;
-  text-align: center
-}
-
-.img-fill img {
-  min-height: 100%;
-  min-width: 100%;
-  position: relative;
-  display: inline-block;
-  max-width: none;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.Grid1k {
-  padding: 0 15px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.blocks-box,
-.slick-slider {
-  margin: 0;
-  padding: 0!important;
-}
-
-.slick-slide {
-  float: left /* If RTL Make This Right */ ;
-  padding: 0;
-}
-
-/* ==== Slider Style === */
-.Modern-Slider .item .img-fill{
-  height:95vh;
-  background:#000;
-}
-
-.Modern-Slider .item .info > div{
-  display:inline-block!important;
-  vertical-align:middle;
-}
-
-.Modern-Slider .NextArrow{
-  position:absolute;
-  top:50%;
-  right:30px;
-  border:0 none;
-  background-color: transparent;
-  text-align:center;
-  font-size: 36px;
-  font-family: 'FontAwesome';
-  color:#FFF;
-  z-index:5;
-  outline: none;
-}
-
-.Modern-Slider .NextArrow:before{
-  content:'\f105';
-}
-
-.Modern-Slider .PrevArrow {
-  position:absolute;
-  top:50%;
-  left:30px;
-  border:0 none;
-  background-color: transparent;
-  text-align:center;
-  font-size: 36px;
-  font-family: 'FontAwesome';
-  color:#FFF;
-  z-index:5;
-  outline: none;
-}
-
-.Modern-Slider .PrevArrow:before{
-  content:'\f104';
-}
-
-.scroll-down {
-  position: absolute;
-  left: 50%;
-  margin-top: -30px;
-  margin-left: -30px;
-  z-index: 10;
-}
-
-.scroll-down a {
-  display: inline-block;
-  background-color: #5fb759;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-}
-
-ul.slick-dots {
-  display: none!important;
-}
-
-.Modern-Slider .text-content {
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.Modern-Slider .item h3 {
-  margin-bottom: 25px;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color:#FFF;
-  animation:fadeOutRight 1s both;
-}
-
-.Modern-Slider .item h5 {
-  margin-bottom: 50px;
-  font-size: 36px;
-  font-weight: 200;
-  letter-spacing: 2.5px;
-  color:#FFF;
   overflow:hidden;
-  animation:fadeOutLeft 1s both;
 }
 
-.Modern-Slider .item a {
-  margin: 0 5px;
+.word-cloud {
+  float: right;
+  bottom:20%;
+  padding-top: 20%;
+  padding-bottom: 10%;
 }
 
-.Modern-Slider .item.slick-active h3{
-  animation:fadeInDown 1s both 1s;
+.name {
+  font-size: 72px;
+  color: #29335C;
+  line-height: 67px;
+  display:flex;
 }
 
-.Modern-Slider .item.slick-active h5{
-  animation:fadeInLeft 1s both 1.5s;
+.name:hover, .cmu:hover, .goldman:hover, .family:hover, .frontend:hover, .embedded:hover,
+.dg:hover, .fitness:hover, .google:hover, .linkedin:hover, .photo:hover, .teach:hover{
+  color: #534D41;
 }
 
-.Modern-Slider .item.slick-active{
-  animation:Slick-FastSwipeIn 1s both;
+.goldman {
+  color:#F3A712;
+  text-align: right;
+  font-size: 30px;
+  line-height: 25px;
 }
 
-.Modern-Slider .buttons {
-  position: relative;
+.cmu {
+  font-size: 35px;
+  color: #A28E71;
+  font-weight: 100;
+  line-height: 50px;
 }
 
-.Modern-Slider {background:#000;}
+.family {
+  font-size: 45px;
+  color: purple;
+}
 
+.frontend {
+  color:#4C5EA9;
+}
 
-/* ==== Slick Slider Css Ruls === */
-.slick-slider{position:relative;display:block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
-.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}
-.slick-list:focus{outline:none}.slick-list.dragging{cursor:hand}
-.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
-.slick-track{position:relative;top:0;left:0;display:block}
-.slick-track:before,.slick-track:after{display:table;content:''}.slick-track:after{clear:both}
-.slick-loading .slick-track{visibility:hidden}
-.slick-slide{display:none;float:left /* If RTL Make This Right */ ;height:100%;min-height:1px}
-.slick-slide.dragging img{pointer-events:none}
-.slick-initialized .slick-slide{display:block}
-.slick-loading .slick-slide{visibility:hidden}
-.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
+.embedded {
+  color: #DB2B39;
+}
+
+.dg {
+  font-size: 35px;
+  color: #C96989;
+  line-height: 80px;
+  height:60px;
+}
+
+.fitness {
+  color:#F2BB59;
+}
+
+.google {
+  color: #8E6D37;
+}
+
+.linkedin {
+  font-size: 55px;
+  line-height: 65px;
+  color:black;
+}
+
+.photo {
+  font-size: 40px;
+  color:#824a7f;
+}
+
+.teach {
+  font-size: 18px;
+  color:#A28E71;
+}
+
 
 /*
 ---------------------------------------------
@@ -594,59 +500,69 @@ about
 ---------------------------------------------
 */
 
-#about {
-  padding: 120px 0px 0px 0px;
-  position: relative;
-  z-index: 9;
-}
-
-#about .container {
-  border-bottom: 5px solid #f7f7f7;
-  padding-bottom: 80px;
-}
-
-#about .section-heading {
-  margin-bottom: 10px;
-}
-
-#about .section-heading h6 {
-  color: #5fb759;
-}
-
-#about .service-item {
-  margin-top: 30px;
-}
-
-#about .service-item img {
-  float: left;
-  margin-right: 15px;
-  width: 46px;
-  height: 46px;
-}
-
-#about .service-item h4 {
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.25px;
-  line-height: 46px;
-}
-
-#about a.main-button-icon {
-  display: inline-block;
-  margin-top: 60px;
-}
-
-#about .right-text-content {
-  margin-top: 40px;
-}
-
-#about .right-text-content p {
+p{
   font-size: 16px;
-  line-height: 27px;
-  color: #777;
 }
 
+.introduction-title{
+  padding-left: 50px;
+  font-size: 80px;
+
+}
+
+.main-profile{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  overflow: hidden;
+}
+
+.profile-background {
+  background: linear-gradient(90deg, #29335C 30%, white 30%);
+  display:flex;
+  flex-direction: row;
+}
+
+.picture {
+  padding: 50px 0 50px 20%;
+  max-height: 300px;
+}
+
+.text {
+  text-align: left;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.name-profile {
+  font-weight: 700;
+  color: #29335C;
+}
+
+.family-background {
+  background: linear-gradient(90deg, white 60%, #29335C 60%);
+  display:flex;
+  flex-direction: row-reverse;
+}
+
+.family-picture {
+  float:right;
+  max-height: 300px;
+  padding: 50px 30% 50px 50px;
+}
+
+/* 
+---------------------------------------------
+header
+--------------------------------------------- 
+*/
+
+.troy-logo{
+  max-height:300px;
+  padding: 50px 50px 50px 100px
+}
 
 /*
 ---------------------------------------------
@@ -1042,7 +958,7 @@ preloader
 */
 #preloader {
   overflow: hidden;
-  background-image: linear-gradient(145deg, #339b9e 0%, #68cc98 100%);
+  background-image: linear-gradient(145deg, #F3A712 0%, #ccbd68 100%);
   left: 0;
   right: 0;
   top: 0;
